@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Task #4: Group 2</title>
+</head>
+<style>
+    body {
+        background-color: #0d0e13;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #cc8181;
+        text-align: center;
+        margin: 0;
+    }
+
+    .groupmembers {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px
+    }
+
+
+    .groupmembers img {
+        height: 250px;
+        border-radius: 20px;
+        border: solid 7px #cc8181;
+        /* position: relative; */
+    }
+
+   
+
+    .groupmembers img:hover {
+        border: solid 7px #ac4141;
+        transform: scale(105%);
+        transition-duration: 0.9s;
+        margin: 10px;
+    }
+
+    .link {
+        color: #cc8181;
+        text-decoration: none;
+    }
+
+    .link:hover {
+        color: #ce6363;
+    }
+
+    nav {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+        padding: 5px 10px;
+        display: inline-block;
+        width: 180px;
+    }
+
+    nav ul li ul {
+        display: none;
+        list-style-type: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* when li is hovered display the ul under it */
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    /* add little bit of padding to li using descendant selectors starting from nav */
+    nav ul li ul li {
+        padding: 5px 0;
+    }
+
+    nav ul li ul li a {
+        padding: 5px;
+        display: block;
+    }
+
+    /* targets the anchor tags sub-menu when li under the class .my-submenu is hovered */
+    .my-submenu li:hover a{
+        background-color:rgb(59, 24, 24);
+        color: #fff;
+    }
+
+    #logo {
+        position: relative;
+        top: 20px;
+        right: 10px;
+    }
+
+    #otherlogo {
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+    
+
+</style>
+<body>
+    <!-- header -->
+    <header style="background-color: rgb(63, 27, 27); color: #fff; padding: 5px;">
+        <h1 style="margin-top: -10px;">
+            <img id="logo" src="images/MSHS Logo.png" height="75px">
+            Welcome to Our Website!
+            <img id="otherlogo" src="images/TADAC Logo.png" height="75px">
+        </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Chapter 1: BKD</a>
+                <ul class="my-submenu">
+                    <li><a href="BKD.html" >What You Need To Know</a></li>
+                    <li><a href="placedtherenamedlinkhererose.html">Introduction and Goal</a></li>
+                    <li><a href="activitiespage3.html">More Information</a></li>
+                    <li><a href="placetherenamedlinkherejacob.html">BKD MakSci</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Chapter 2: NIDA</a>
+                <ul class="my-submenu">
+                    <li><a href="nidaone.html" >What You Need To Know</a></li>
+                    <li><a href="nidagoal.html">Goal and Research Contributions</a></li>
+                  
+                </ul>
+            </li>
+            <li>
+                <a href="#">Chapter 3: UNODC</a>
+                <ul class="my-submenu">
+                    <li><a href="unodcone.html" >What You Need To Know</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <p>
+        Drugs are no good, and that’s why we’ve created this platform—to spread awareness about the dangers of drug abuse, to honor and give credit to the individuals and organizations that have taken meaningful steps to prevent drugs from harming our communities, and to inspire others to join us in building a healthier, drug-free future. Together, we can make a difference!
+    </p>
+    <hr>
+
+
+    <section class="groupmembers">
+        <div class="img">
+            <img src="images/Rose.jpg" alt="rosesarered">
+            <p></p>Sofia Rose Melgar</p>
+        </div>
+        
+        <div class="img">
+            <img src="images/Jerian.jpg" alt="ilovedogs">
+            <p>Jerian Gianna A. Morales</p>
+        </div>
+        
+        <div class="img">
+            <img src="images/Jacob.jpg" alt="theybringmejoy_morethanfrogs">
+            <p>Jacob Filemon D. Lagman</p>
+        </div>
+    </section>
+    <hr>
+
+
+    <footer>
+        <h4>Thank You For Visiting!</h4>
+        <p style="font-size: 13px;">Performance Task #4 <br>Group 2 <br>ICT <br>8-Pasteur</p>
+        <hr>
+    </footer>
+</body>
+</html>
